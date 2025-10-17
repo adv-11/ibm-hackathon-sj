@@ -1,0 +1,9 @@
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+ORCHESTRATE_API_KEY = os.getenv("ORCHESTRATE_API_KEY")
+SERVICE_INSTANCE_URL = os.getenv("SERVICE_INSTANCE_URL")
+
+print ("ORCHESTRATE_API_KEY:", ORCHESTRATE_API_KEY)
+print ("SERVICE_INSTANCE_URL:", SERVICE_INSTANCE_URL)
